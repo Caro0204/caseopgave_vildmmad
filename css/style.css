@@ -1,0 +1,21 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*************** FONT *****************/
+
+/************** Forside ***************/
+/*header*/
+@media (min-width: 700px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
