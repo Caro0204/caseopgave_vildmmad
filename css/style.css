@@ -9,6 +9,13 @@ body {
 }
 
 /*************** FONT *****************/
+h1 {
+  font-family: 'Corinthia', cursive;
+}
+
+p {
+  font-family: 'Cutive Mono', monospace;
+}
 
 /************** Forside ***************/
 /*header*/
