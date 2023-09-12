@@ -198,7 +198,7 @@ footer {
 /*** DESKTOP ***/
 @media screen and (min-width: 700px) {
   .forside_bg {
-    background-image: url(/billeder/Baggrund.webp);
+    background-image: url(/billeder/sommer.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
