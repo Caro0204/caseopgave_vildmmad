@@ -1,10 +1,15 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 img {
   width: 100%;
   height: auto;
   display: block;
 }
-body {
-  max-width: 1920px;
+main {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -126,6 +131,29 @@ footer {
   background-color: #FFE0A5;
   color: rgb(0, 0, 0);
   padding: 0.1%;
+}
+
+/************** billeder************/
+.efteraar_img {
+  background-image: url(/billeder/efterår.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.foraar_img {
+  background-image: url(/billeder/forår.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sommer_img {
+  background-image: url(/billeder/sommer.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vinter_img {
+  background-image: url(/billeder/vinter.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /************** Forside ***************/
