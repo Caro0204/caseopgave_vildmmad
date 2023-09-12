@@ -202,8 +202,8 @@ footer {
 /*** DESKTOP ***/
 @media (min-width: 700px) {
   .forside_bg {
-    background-image: url(/billeder/vinter.webp);
-    background-size: cover;
+    background-image: url(/billeder/sommer.webp);
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
