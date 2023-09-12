@@ -1,0 +1,40 @@
+
+
+.grid_forside {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+  
+  .forside {
+    margin-top: 45%;
+    margin-bottom: 20%;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+  }
+  
+  .grid_aarstider {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Create four columns */
+    gap: 20px; /* Adjust the gap between images */
+  
+  }
+  
+  @media screen and (min-width: 700px){
+    .grid_forside {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .forside {
+      margin-top: 13%;
+      margin-bottom: 20%;
+      grid-column: 1;
+      grid-row: 2;
+      text-align: center;
+    }
+    .grid_aarstider {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Create four columns */
+      gap: 20px; /* Adjust the gap between images */
+    }
+  }

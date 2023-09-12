@@ -4,7 +4,7 @@ img {
   display: block;
 }
 body {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -12,17 +12,184 @@ body {
 h1 {
   font-family: 'Corinthia', cursive;
 }
+h2 {
+  font-family: 'Corinthia', cursive;
+}
 
 p {
   font-family: 'Cutive Mono', monospace;
 }
+a {
+  font-family: 'Cutive Mono', monospace;
+}
+
+/*********** HEADER **************/
+.banner {
+  background: #8BB3E5;
+  padding: 0.5rem;
+  padding-right: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 20px;
+}
+@media (max-width: 700px) {
+  .banner {
+    background: #EEC2AE;
+    padding: 0.5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 20px;
+  }
+}
+.logo img {
+  height: 70px;
+  width: auto;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 55px;
+}
+.main-menu a {
+  font-size: 1.3rem;
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: 4%;
+  cursor: pointer;
+
+  display: none;
+}
+.toggle-btn:hover {
+  scale: 1.2;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+a:hover {
+  color: #fae156;
+}
+
+@media (max-width: 700px) {
+  .logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+  a:hover {
+    font-weight: bold;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #7e1616;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #FFE0A5;
+  color: rgb(0, 0, 0);
+  padding: 0.1%;
+}
 
 /************** Forside ***************/
-/*header*/
-@media (min-width: 700px) {
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+/******** MOBIL *****/
+
+.forside_bg {
+  background-image: url(/billeder/mobil_bg.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+ 
+}
+.forside a{
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 1.5%;
+  border-radius: 50%;
+  border: solid rgb(255, 255, 255) 5px;
+  color: gray;
+  font-weight: bolder;
+  font-size: 1rem;
+  box-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+.forside a:hover {
+  font-size: 1.1rem;
+  color: rgb(41, 178, 212);
+}
+.forside h2 {
+  margin-bottom:2%;
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*** DESKTOP ***/
+@media screen and (min-width: 700px) {
+
+  .forside_bg {
+    background-image: url(/billeder/Baggrund.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+}
+
+  .forside h2 {
+      margin-bottom: 2%;
+      font-size: 7rem;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+  .forside a{
+    background-color: rgba(255, 255, 255, 0.87);
+      padding: 1.5%;
+      border-radius: 50%;
+      border: solid white 5px;
+      color: gray;
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-bottom: 1%;
+      margin-top: 5%;
+  }
+  .forside a:hover {
+      font-size: 2.1rem;
+      color: #8BB3E5;
+}
 }
