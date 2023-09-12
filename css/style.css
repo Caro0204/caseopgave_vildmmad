@@ -162,6 +162,11 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.season_img {
+  background-image: url(/billeder/sommer.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /************** Forside ***************/
 

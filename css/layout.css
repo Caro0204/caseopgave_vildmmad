@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.grid_aarstider {
+.grid_season {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px; 
@@ -32,9 +32,5 @@
     grid-row: 2;
     text-align: center;
   }
-  .grid_aarstider {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create four columns */
-    gap: 20px; /* Adjust the gap between images */
-  }
+
 }
