@@ -20,7 +20,7 @@
 
 }
 
-@media screen and (min-width: 700px){
+@media(min-width: 700px){
   .grid_forside {
     display: grid;
     grid-template-columns: 1fr;
