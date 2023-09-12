@@ -225,3 +225,20 @@ footer {
     color: #8bb3e5;
   }
 }
+
+/******** breadcrumbs *********/
+
+@media screen and (min-width: 900px) {
+  .breadcrumbs {
+    font-size: 0.8rem;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+  }
+}
