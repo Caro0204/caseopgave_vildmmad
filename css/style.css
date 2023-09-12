@@ -183,9 +183,9 @@ footer {
 }
 
 /*** DESKTOP ***/
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
   .forside_bg {
-    background-image: url(/billeder/Baggrund.webp);
+    background-image: url(/billeder/vinter.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
