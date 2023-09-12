@@ -15,20 +15,25 @@ main {
 /*************** FONT *****************/
 h1 {
   font-family: "Lobster Two", cursive;
+  font-family: "Lobster Two", cursive;
 }
 h2 {
+  font-family: "Lobster Two", cursive;
   font-family: "Lobster Two", cursive;
 }
 
 p {
   font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 a {
+  font-family: "Raleway", sans-serif;
   font-family: "Raleway", sans-serif;
 }
 
 /*********** HEADER **************/
 .banner {
+  background: #8bb3e5;
   background: #8bb3e5;
   padding: 0.5rem;
   padding-right: 5rem;
@@ -40,6 +45,7 @@ a {
 }
 @media (max-width: 700px) {
   .banner {
+    background: #eec2ae;
     background: #eec2ae;
     padding: 0.5rem;
     padding-right: 5rem;
@@ -68,6 +74,7 @@ a {
   font-size: 1.3rem;
 }
 
+/*********** burgermenu **********/
 /*********** burgermenu **********/
 .toggle-btn {
   background: transparent;
