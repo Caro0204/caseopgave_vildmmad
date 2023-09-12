@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Cutive+Mono&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Cutive+Mono&family=Lobster+Two:wght@700&family=Raleway&display=swap"
         rel="stylesheet">
-    <title>Vinter</title>
+    <title>Forside</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
 </head>
 
-<body class="vinter_img">
+<body class="forside_bg">
     <header class="banner">
         <div class="logo">
             <img src="/billeder/logo.svg" alt="strand_logo">
@@ -22,23 +24,25 @@
         <nav class="main-menu">
             <button type="button" class="toggle-btn">Menu</button>
             <ul>
-                <li><a href="forside.html">Forside</a></li>
+                <li><a href="index.html">Forside</a></li>
                 <li><a href="s_valg.html">Sæsoner</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>VINTER</h1>
+        <!-- Creating our grid classs -->
+        <div class="grid_forside">
+            <div class="forside">
+                <h2 class="forside-text">Stranden</h2>
+                <a class="forside-text" href="s_valg.html">Vælg Sæson</a>
+            </div>
+        </div>
     </main>
     <footer>
         <p>made by grp 2</p>
     </footer>
-
-    <ol class="breadcrumbs">
-        <li><a href="index.html">&rarr; Forside </a></li>
-        <li><a href="s_valg.html">&rarr; Sæsoner</a></li>
-    </ol>
-
+    <script src="/js/script.js"></script>
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>
