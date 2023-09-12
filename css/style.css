@@ -10,17 +10,17 @@ body {
 
 /*************** FONT *****************/
 h1 {
-  font-family: 'Corinthia', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 h2 {
-  font-family: 'Corinthia', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 
 p {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Raleway', sans-serif;
 }
 a {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*********** HEADER **************/
