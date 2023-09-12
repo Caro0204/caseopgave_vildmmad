@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -11,20 +15,25 @@ main {
 /*************** FONT *****************/
 h1 {
   font-family: "Lobster Two", cursive;
+  font-family: "Lobster Two", cursive;
 }
 h2 {
+  font-family: "Lobster Two", cursive;
   font-family: "Lobster Two", cursive;
 }
 
 p {
   font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 a {
+  font-family: "Raleway", sans-serif;
   font-family: "Raleway", sans-serif;
 }
 
 /*********** HEADER **************/
 .banner {
+  background: #8bb3e5;
   background: #8bb3e5;
   padding: 0.5rem;
   padding-right: 5rem;
@@ -36,6 +45,7 @@ a {
 }
 @media (max-width: 700px) {
   .banner {
+    background: #eec2ae;
     background: #eec2ae;
     padding: 0.5rem;
     padding-right: 5rem;
@@ -63,7 +73,6 @@ a {
 .main-menu a {
   font-size: 1.3rem;
 }
-
 /*********** burgermenu **********/
 .toggle-btn {
   background: transparent;
@@ -122,10 +131,13 @@ a:hover {
 }
 
 footer {
-  text-align: center;
+  position: fixed; /* or position: absolute; */
+  bottom: 0;
+  width: 100%;
   background-color: #ffe0a5;
-  color: rgb(0, 0, 0);
-  padding: 0.1%;
+  color: #000000;
+  text-align: center;
+  padding: 2px;
 }
 
 /************** billeder ************/
@@ -147,6 +159,11 @@ footer {
 }
 .vinter_img {
   background-image: url(/billeder/vinter.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.season_img {
+  background-image: url(/billeder/sommer.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -177,7 +194,7 @@ footer {
 }
 .forside h2 {
   margin-bottom: 2%;
-  font-size: 7rem;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
