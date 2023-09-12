@@ -73,6 +73,7 @@ a {
 .main-menu a {
   font-size: 1.3rem;
 }
+
 /*********** burgermenu **********/
 .toggle-btn {
   background: transparent;
@@ -162,11 +163,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.season_img {
-  background-image: url(/billeder/sommer.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 /************** Forside ***************/
 
@@ -200,10 +196,10 @@ footer {
 }
 
 /*** DESKTOP ***/
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .forside_bg {
-    background-image: url(/billeder/sommer.webp);
-    background-size: contain;
+    background-image: url(/billeder/Baggrund.webp);
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
