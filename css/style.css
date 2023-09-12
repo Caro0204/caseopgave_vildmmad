@@ -1,6 +1,5 @@
 body {
-  max-width: 1920px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 img {
@@ -15,22 +14,22 @@ main {
 
 /*************** FONT *****************/
 h1 {
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
 }
 h2 {
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*********** HEADER **************/
 .banner {
-  background: #8BB3E5;
+  background: #8bb3e5;
   padding: 0.5rem;
   padding-right: 5rem;
   display: flex;
@@ -41,7 +40,7 @@ a {
 }
 @media (max-width: 700px) {
   .banner {
-    background: #EEC2AE;
+    background: #eec2ae;
     padding: 0.5rem;
     padding-right: 5rem;
     display: flex;
@@ -69,7 +68,7 @@ a {
   font-size: 1.3rem;
 }
 
-/* burgermenu */
+/*********** burgermenu **********/
 .toggle-btn {
   background: transparent;
   min-width: 44px;
@@ -127,13 +126,16 @@ a:hover {
 }
 
 footer {
+  position: fixed; /* or position: absolute; */
+  bottom: 0;
+  width: 100%;
+  background-color: #ffe0a5;
+  color: #000000;
   text-align: center;
-  background-color: #FFE0A5;
-  color: rgb(0, 0, 0);
-  padding: 0.1%;
+  padding: 2px;
 }
 
-/************** billeder************/
+/************** billeder ************/
 .efteraar_img {
   background-image: url(/billeder/efterår.webp);
   background-size: cover;
@@ -162,12 +164,11 @@ footer {
 
 .forside_bg {
   background-image: url(/billeder/mobil_bg.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
- 
 }
-.forside a{
+.forside a {
   background-color: rgba(255, 255, 255, 0.87);
   padding: 1.5%;
   border-radius: 50%;
@@ -175,49 +176,46 @@ footer {
   color: gray;
   font-weight: bolder;
   font-size: 1rem;
-  box-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .forside a:hover {
   font-size: 1.1rem;
   color: rgb(41, 178, 212);
 }
 .forside h2 {
-  margin-bottom:2%;
-  font-size: 7rem;
+  margin-bottom: 2%;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*** DESKTOP ***/
 @media screen and (min-width: 700px) {
-
   .forside_bg {
     background-image: url(/billeder/Baggrund.webp);
     background-size: cover;
     background-repeat: no-repeat;
-
-   
-}
+  }
 
   .forside h2 {
-      margin-bottom: 2%;
-      font-size: 7rem;
-      color: rgb(255, 255, 255);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2%;
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  .forside a{
+  .forside a {
     background-color: rgba(255, 255, 255, 0.87);
-      padding: 1.5%;
-      border-radius: 50%;
-      border: solid white 5px;
-      color: gray;
-      font-weight: bolder;
-      font-size: 2rem;
-      margin-bottom: 1%;
-      margin-top: 5%;
+    padding: 1.5%;
+    border-radius: 50%;
+    border: solid white 5px;
+    color: gray;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1%;
+    margin-top: 5%;
   }
   .forside a:hover {
-      font-size: 2.1rem;
-      color: #8BB3E5;
-}
+    font-size: 2.1rem;
+    color: #8bb3e5;
+  }
 }
