@@ -203,7 +203,7 @@ footer {
 @media (min-width: 700px) {
   .forside_bg {
     background-image: url(/billeder/sommer.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
