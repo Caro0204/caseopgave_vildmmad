@@ -265,6 +265,25 @@ footer {
   margin: 0;
 }
 
+.plantesidenbody {
+  background-color: #ffe0a5;
+}
+.opskrift_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  background-image: url("/billeder/planteside_baggrund.webp");
+  background-repeat: no-repeat;
+}
+.plantetekst {
+  margin: 15%;
+}
+.h1planteside {
+  margin-left: 35%;
+  margin-top: -15%;
+  margin-bottom: 5%;
+}
+
 /******** breadcrumbs *********/
 
 .breadcrumbs {
