@@ -30,29 +30,3 @@
     text-align: center;
   }
 }
-/********** animation **********/
-#logoani {
-  width: 30%;
-  position: absolute;
-  top: 20%;
-  left: 35%;
-}
-
-.forside_bg_m_logo {
-  background-color: white;
-}
-.fade_in {
-  animation-name: fade_in_kf;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-@keyframes fade_in_kf {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
