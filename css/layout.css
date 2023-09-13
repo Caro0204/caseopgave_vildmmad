@@ -38,6 +38,7 @@
 .opskrift_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
   background-image: url("/billeder/planteside_baggrund.webp");
   background-repeat: no-repeat;
 }

@@ -243,3 +243,7 @@ footer {
   height: 60%;
   border-radius: 40%;
 }
+#margin_plante {
+  max-width: 100%;
+  margin: 0;
+}
