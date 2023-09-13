@@ -31,6 +31,16 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
+.overskrift_underside {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+@media screen and (min-width: 900px) {
+  .overskrift_underside {
+    display: none;
+  }
+}
 /*********** HEADER **************/
 .banner {
   background: #8bb3e5;
@@ -142,28 +152,29 @@ footer {
 }
 
 /************** billeder ************/
-.efteraar_img {
-  background-image: url(/billeder/efterår.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.foraar_img {
-  background-image: url(/billeder/forår.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+@media screen and (min-width: 700px) {
+  .efteraar_img {
+    background-image: url(/billeder/efterår.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .foraar_img {
+    background-image: url(/billeder/forår.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-.sommer_img {
-  background-image: url(/billeder/sommer.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+  .sommer_img {
+    background-image: url(/billeder/sommer.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .vinter_img {
+    background-image: url(/billeder/vinter.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-.vinter_img {
-  background-image: url(/billeder/vinter.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 /************** Forside ***************/
 
 /******** MOBIL *****/
@@ -228,262 +239,290 @@ footer {
 
 /******** breadcrumbs *********/
 
-@media screen and (min-width: 900px) {
-  .breadcrumbs {
-    font-size: 0.8rem;
-    list-style-type: none;
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-  }
-  li {
-    display: flex;
-    flex-direction: row;
-    flex-flow: column;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+.breadcrumbs {
+  font-size: 0.8rem;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
 }
-#sreen {
-  width: 100%;
-  aspect-ratio: 16/9;
-  position: relative;
-}
-#plante_elemets {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
+li {
+  display: flex;
+  flex-direction: row;
+  flex-flow: column;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#plante_container1 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 69%;
-  left: 85%;
-  transition: transform 0.2s ease-in-out;
-}
+/********** Bobler ********/
 
-#plante_sprite1 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
+.grid_elements {
+  display: grid;
+  gap: 50px;
+  margin: 50px;
 }
-
 #plante_sprite1 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-
-#plante_container1:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-#plante_container2 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 79%;
-  left: 70%;
-  transition: transform 0.2s ease-in-out;
-}
-#plante_sprite2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
 #plante_sprite2 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-
-#plante_container2:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-#plante_container3 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 69%;
-  left: 50%;
-  transition: transform 0.2s ease-in-out;
-}
-#plante_sprite3 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
 #plante_sprite3 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-
-#plante_container3:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-#plante_container4 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 79%;
-  left: 30%;
-  transition: transform 0.2s ease-in-out;
-}
-
-#plante_sprite4 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
 #plante_sprite4 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-
-#plante_container4:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-#plante_container5 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 64%;
-  left: 20%;
-  transition: transform 0.2s ease-in-out;
-}
-
-#plante_sprite5 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
 #plante_sprite5 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-
-#plante_container5:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-#plante_container6 {
-  position: absolute;
-  width: 7%;
-  aspect-ratio: 4/4;
-  top: 79%;
-  left: 5%;
-  transition: transform 0.2s ease-in-out;
-}
-
-#plante_sprite6 {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
 #plante_sprite6 img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
 
-#plante_container6:hover {
-  transform: translateY(-10px);
-  animation: bounce 0.5s ease infinite;
+.vinter_img {
+  background-color: #abc9c1ba;
+}
+.foraar_img {
+  background-color: #c4cfa0d6;
+}
+.efteraar_img {
+  background-color: #e381548a;
+}
+.sommer_img {
+  background-color: #ffeab4;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
+@media screen and (min-width: 900px) {
+  #sreen {
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
   }
-  50% {
-    transform: translateY(-20px);
+  #plante_elemets {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  #plante_container1 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 69%;
+    left: 85%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #plante_sprite1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container1:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #plante_container2 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 79%;
+    left: 70%;
+    transition: transform 0.2s ease-in-out;
+  }
+  #plante_sprite2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container2:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #plante_container3 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 69%;
+    left: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  #plante_sprite3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container3:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #plante_container4 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 79%;
+    left: 30%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #plante_sprite4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container4:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #plante_container5 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 64%;
+    left: 20%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #plante_sprite5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container5:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #plante_container6 {
+    position: absolute;
+    width: 7%;
+    aspect-ratio: 4/4;
+    top: 79%;
+    left: 5%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #plante_sprite6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #plante_container6:hover {
+    transform: translateY(-10px);
+    animation: bounce 0.5s ease infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .vinter_img {
+    background-color: white;
+  }
+  .foraar_img {
+    background-color: white;
+  }
+  .efteraar_img {
+    background-color: white;
+  }
+  .sommer_img {
+    background-color: white;
   }
 }
