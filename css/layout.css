@@ -1,8 +1,6 @@
-
-
 .grid_forside {
   display: grid;
-  grid-template-columns:repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .forside {
@@ -16,11 +14,10 @@
 .grid_season {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px; 
-
+  gap: 20px;
 }
 
-@media(min-width: 700px){
+@media (min-width: 700px) {
   .grid_forside {
     display: grid;
     grid-template-columns: 1fr;
@@ -32,5 +29,22 @@
     grid-row: 2;
     text-align: center;
   }
+}
 
+/****************** Plantesiden ***************/
+.plantesidenbody {
+  background-color: #ffe0a5;
+}
+.opskrift_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: url("/billeder/sommer.webp");
+}
+.plantetekst {
+  margin: 15%;
+}
+.h1planteside {
+  margin-left: 35%;
+  margin-top: -15%;
+  margin-bottom: 5%;
 }
