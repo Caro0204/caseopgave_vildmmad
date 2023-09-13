@@ -19,6 +19,7 @@ main {
   margin: 0 auto;
   flex-grow: 1;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*************** FONT *****************/
@@ -242,25 +243,37 @@ footer {
 /*************** SÆSON *******************/
 /********* MOBIL ***********/
 
-.season_container li {
-  list-style-type: none;
+#margin_season {
+  max-width: 100%;
+  margin: 0;
+}
+#margin_season h2 {
+  min-width: 200px;
   text-align: center;
 }
-
-.season_container li {
-  list-style-type: none;
-}
 .season_efteraar {
-  background-color: #e38154;
+  background-color: #e38154a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
 }
 .season_vinter {
-  background-color: #abc9c1;
+  background-color: #abc9c1a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
 }
 .season_foraar {
-  background-color: #c4cfa0;
+  background-color: #c4cfa0a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
 }
 .season_sommer {
-  background-color: #ffeab4;
+  background-color: #ffeab4a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
 }
 
 /*********** DESKTOP ***************/
