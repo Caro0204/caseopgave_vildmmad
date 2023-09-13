@@ -565,7 +565,8 @@ li {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -573,16 +574,47 @@ li {
   }
 }
 
-  /*************** SÆSON *******************/
-  /********* MOBIL ***********/
+/*************** SÆSON *******************/
+/********* MOBIL ***********/
 
+#margin_season {
+  max-width: 100%;
+  margin: 0;
+}
+#margin_season h2 {
+  min-width: 200px;
+  text-align: center;
+}
+.season_efteraar {
+  background-color: #e38154a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_vinter {
+  background-color: #abc9c1a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_foraar {
+  background-color: #c4cfa0a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_sommer {
+  background-color: #ffeab4a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+
+/*********** DESKTOP ***************/
+@media (min-width: 700px) {
   #margin_season {
     max-width: 100%;
     margin: 0;
-  }
-  #margin_season h2 {
-    min-width: 200px;
-    text-align: center;
   }
   .season_efteraar {
     background-color: #e38154a8;
@@ -608,37 +640,4 @@ li {
     flex-grow: 1;
     place-items: center;
   }
-
-  /*********** DESKTOP ***************/
-  @media (min-width: 700px) {
-    #margin_season {
-      max-width: 100%;
-      margin: 0;
-    }
-    .season_efteraar {
-      background-color: #e38154a8;
-      display: grid;
-      flex-grow: 1;
-      place-items: center;
-    }
-    .season_vinter {
-      background-color: #abc9c1a8;
-      display: grid;
-      flex-grow: 1;
-      place-items: center;
-    }
-    .season_foraar {
-      background-color: #c4cfa0a8;
-      display: grid;
-      flex-grow: 1;
-      place-items: center;
-    }
-    .season_sommer {
-      background-color: #ffeab4a8;
-      display: grid;
-      flex-grow: 1;
-      place-items: center;
-    }  }
-
-
 }
