@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -10,6 +17,9 @@ img {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*************** FONT *****************/
@@ -18,8 +28,8 @@ h1 {
   font-family: "Lobster Two", cursive;
 }
 h2 {
-  font-family: "Lobster Two", cursive;
-  font-family: "Lobster Two", cursive;
+  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
@@ -286,7 +296,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -315,7 +326,6 @@ footer {
   border-radius: 100%;
   width: 100%;
   height: 100%;
- 
 }
 
 #plante_container2:hover {
@@ -324,7 +334,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -339,7 +350,6 @@ footer {
   top: 69%;
   left: 50%;
   transition: transform 0.2s ease-in-out;
-  
 }
 #plante_sprite3 {
   width: 100%;
@@ -354,7 +364,6 @@ footer {
   border-radius: 100%;
   width: 100%;
   height: 100%;
-  
 }
 
 #plante_container3:hover {
@@ -363,7 +372,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -401,14 +411,14 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
 }
-
 
 #plante_container5 {
   position: absolute;
@@ -440,7 +450,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -478,7 +489,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -486,3 +498,70 @@ footer {
   }
 }
 
+/*************** SÆSON *******************/
+/********* MOBIL ***********/
+
+#margin_season {
+  max-width: 100%;
+  margin: 0;
+}
+#margin_season h2 {
+  min-width: 200px;
+  text-align: center;
+}
+.season_efteraar {
+  background-color: #e38154a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_vinter {
+  background-color: #abc9c1a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_foraar {
+  background-color: #c4cfa0a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+.season_sommer {
+  background-color: #ffeab4a8;
+  display: grid;
+  flex-grow: 1;
+  place-items: center;
+}
+
+/*********** DESKTOP ***************/
+@media (min-width: 700px) {
+  #margin_season {
+    max-width: 100%;
+    margin: 0;
+  }
+  .season_efteraar {
+    background-color: #e38154a8;
+    display: grid;
+    flex-grow: 1;
+    place-items: center;
+  }
+  .season_vinter {
+    background-color: #abc9c1a8;
+    display: grid;
+    flex-grow: 1;
+    place-items: center;
+  }
+  .season_foraar {
+    background-color: #c4cfa0a8;
+    display: grid;
+    flex-grow: 1;
+    place-items: center;
+  }
+  .season_sommer {
+    background-color: #ffeab4a8;
+    display: grid;
+    flex-grow: 1;
+    place-items: center;
+  }
+}

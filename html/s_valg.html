@@ -14,16 +14,37 @@
     <link rel="stylesheet" href="/css/layout.css">
 </head>
 
-<body>
-    <main>
-        <ul>
-            <li><a href="efteraar.html">Efterår</a></li>
-            <li><a href="vinter.html">Vinter</a></li>
-            <li><a href="foraar.html">Forår</a></li>
-            <li><a href="sommer.html">Sommer</a></li>
+<body class="forside_bg">
+    <header class="banner">
+        <div class="logo">
+            <img src="/billeder/logo.svg" alt="strand_logo">
+        </div>
 
-        </ul>
+        <nav class="main-menu">
+            <button type="button" class="toggle-btn">Menu</button>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="s_valg.html">Sæsoner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="margin_season">
+        <a class="season_efteraar" href="efteraar.html">
+            <h2>Efterår</h2>
+        </a>
+        <a class="season_vinter" href="vinter.html">
+            <h2>Vinter</h2>
+        </a>
+        <a class="season_foraar" href="foraar.html">
+            <h2>Forår</h2>
+        </a>
+        <a class="season_sommer" href="sommer.html">
+            <h2>Sommer</h2>
+        </a>
     </main>
+    <footer>
+        <p>made by grp 2</p>
+    </footer>
 </body>
 
 </html>
