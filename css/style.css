@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
 }
@@ -18,8 +22,8 @@ h1 {
   font-family: "Lobster Two", cursive;
 }
 h2 {
-  font-family: "Lobster Two", cursive;
-  font-family: "Lobster Two", cursive;
+  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
@@ -227,5 +231,52 @@ footer {
   .forside a:hover {
     font-size: 2.1rem;
     color: #8bb3e5;
+  }
+}
+
+/*************** SÆSON *******************/
+/********* MOBIL ***********/
+
+.season_container li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.season_container li {
+  list-style-type: none;
+}
+.season_efteraar {
+  background-color: #e38154;
+}
+.season_vinter {
+  background-color: #abc9c1;
+}
+.season_foraar {
+  background-color: #c4cfa0;
+}
+.season_sommer {
+  background-color: #ffeab4;
+}
+
+/*********** DESKTOP ***************/
+@media (min-width: 700px) {
+  .flex {
+    display: flex;
+  }
+  #ingen_margin {
+    margin: 0;
+  }
+
+  .season_efteraar {
+    background-color: #e38154a8;
+  }
+  .season_vinter {
+    background-color: #abc9c1a8;
+  }
+  .season_foraar {
+    background-color: #c4cfa0a8;
+  }
+  .season_sommer {
+    background-color: #ffeab4a8;
   }
 }
