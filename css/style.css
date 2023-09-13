@@ -350,7 +350,20 @@ li {
 .sommer_img {
   background-color: #ffeab4;
 }
-
+@media screen and (min-width: 700px) {
+  .vinter_img {
+    background-color: white;
+  }
+  .foraar_img {
+    background-color: white;
+  }
+  .efteraar_img {
+    background-color: white;
+  }
+  .sommer_img {
+    background-color: white;
+  }
+}
 @media screen and (min-width: 900px) {
   #sreen {
     width: 100%;
