@@ -286,7 +286,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -315,7 +316,6 @@ footer {
   border-radius: 100%;
   width: 100%;
   height: 100%;
- 
 }
 
 #plante_container2:hover {
@@ -324,7 +324,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -339,7 +340,6 @@ footer {
   top: 69%;
   left: 50%;
   transition: transform 0.2s ease-in-out;
-  
 }
 #plante_sprite3 {
   width: 100%;
@@ -354,7 +354,6 @@ footer {
   border-radius: 100%;
   width: 100%;
   height: 100%;
-  
 }
 
 #plante_container3:hover {
@@ -363,7 +362,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -401,14 +401,14 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
 }
-
 
 #plante_container5 {
   position: absolute;
@@ -440,7 +440,8 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -478,11 +479,11 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
 }
-
