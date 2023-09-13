@@ -37,6 +37,10 @@
   top: 20%;
   left: 35%;
 }
+
+.forside_bg_m_logo {
+  background-color: white;
+}
 .fade_in {
   animation-name: fade_in_kf;
   animation-duration: 2s;
