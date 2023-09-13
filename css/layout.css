@@ -39,6 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-image: url("/billeder/planteside_baggrund.webp");
+  background-repeat: no-repeat;
 }
 .plantetekst {
   margin: 15%;
@@ -47,8 +48,4 @@
   margin-left: 35%;
   margin-top: -15%;
   margin-bottom: 5%;
-}
-.frame {
-  border-style: solid;
-  border-color: white;
 }
