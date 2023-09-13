@@ -641,3 +641,26 @@ li {
     place-items: center;
   }
 }
+/********** logo på forsiden ***********/
+#logoani {
+  width: 35%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.fade_in {
+  animation-name: fade_in_kf;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes fade_in_kf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
