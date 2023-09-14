@@ -11,14 +11,10 @@ fetch(url + "/rest/v1/vildmad", {
   },
 })
   .then((res) => res.json())
-  .then((data) => showData(data))
-  .then(showItems);
+  .then((data) => showData(data));
 
 function showData(items) {
   console.log(items);
-}
-function showItems(items) {
-  items.forEach(showItem);
 }
 
 function showItem(item) {
