@@ -22,10 +22,12 @@ function showData(items) {
 
 function showItem(item) {
   const template = document.querySelector("#plante").content.cloneNode(true);
-  template.querySelector(".Sankested").textContent = item.Sankested;
-  template.querySelector(".Saeson").textContent = item.Saeson;
-  template.querySelector(".Beskrivelse").textContent = item.Beskrivelse;
-  template.querySelector(".Sankning").textContent = item.Sankning;
+  document.querySelector("p.Sankested").textContent = item.Sankested;
+  document.querySelector("p.Saeson").textContent = item.Saeson;
+  document.querySelector("p.Beskrivelse").textContent = item.Beskrivelse;
+  document.querySelector("p.Sankning").textContent = item.Sankning;
+  document.querySelector("p.Ingredienser").textContent = item.Ingredienser;
+  document.querySelector("p.Fremgangsmåde").textContent = item.Fremgangsmåde;
 
-  document.querySelector("#margin_plante").appendChild(template);
+  document.querySelector(".margin_plante").appendChild(copy);
 }
