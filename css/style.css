@@ -164,23 +164,23 @@ footer {
 /************** billeder ************/
 @media screen and (min-width: 700px) {
   .efteraar_img {
-    background-image: url(/billeder/efterår.webp);
+    background-image: url(../billeder/efterår.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
   .foraar_img {
-    background-image: url(/billeder/forår.webp);
+    background-image: url(../billeder/forår.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .sommer_img {
-    background-image: url(/billeder/sommer.webp);
+    background-image: url(../billeder/sommer.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
   .vinter_img {
-    background-image: url(/billeder/vinter.webp);
+    background-image: url(../billeder/vinter.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -190,7 +190,7 @@ footer {
 /******** MOBIL *****/
 
 .forside_bg {
-  background-image: url(/billeder/mobil_bg.png);
+  background-image: url(../billeder/mobil_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -219,7 +219,7 @@ footer {
 /*** DESKTOP ***/
 @media screen and (min-width: 700px) {
   .forside_bg {
-    background-image: url(/billeder/sommer.webp);
+    background-image: url(../billeder/sommer.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -272,7 +272,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
-  background-image: url("/billeder/planteside_baggrund.webp");
+  background-image: url("../billeder/planteside_baggrund.webp");
   background-repeat: no-repeat;
 }
 .plantetekst {
