@@ -36,3 +36,11 @@
     padding-top: 5%;
   }
 }
+
+.grid_season {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: end;
+  margin-bottom: 5%;
+  gap: 5%;
+}
