@@ -677,3 +677,13 @@ li {
     opacity: 1;
   }
 }
+.vildmad_logo {
+  width: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.grid_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
