@@ -304,6 +304,7 @@ li {
 
 .grid_elements {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 50px;
   margin: 50px;
 }
@@ -677,13 +678,20 @@ li {
     opacity: 1;
   }
 }
-.vildmad_logo {
-  width: 5%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
 .grid_footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.vildmad_logo {
+  width: 20%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+@media (min-width: 700px) {
+  .vildmad_logo {
+    width: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
