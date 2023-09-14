@@ -13,5 +13,17 @@ fetch(url + "/rest/v1/vildmad", {
 
 function showData(items) {
   console.log(items);
-  items.For;
+items.forEach(element => {
+  if(element.Sankested){
+    if(element.Sankested.includes(""))
+  }
 }
+});
+
+  // //fang template
+  // const template = document.querySelector("#plante").content;
+  // // lav en kopi
+  // const copy
+
+  // document.querySelector("p.Sankested").textContent = items.Sankested;
+
