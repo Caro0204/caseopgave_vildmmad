@@ -29,4 +29,10 @@
     grid-row: 2;
     text-align: center;
   }
+  .grid_planteside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 71px;
+    padding-top: 5%;
+  }
 }
