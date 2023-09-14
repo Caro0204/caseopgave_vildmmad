@@ -26,6 +26,8 @@ function showItem(item) {
   document.querySelector("p.Saeson").textContent = item.Saeson;
   document.querySelector("p.Beskrivelse").textContent = item.Beskrivelse;
   document.querySelector("p.Sankning").textContent = item.Sankning;
+  document.querySelector("p.Ingredienser").textContent = item.Ingredienser;
+  document.querySelector("p.Fremgangsmåde").textContent = item.Fremgangsmåde;
 
   document.querySelector(".margin_plante").appendChild(copy);
 }
