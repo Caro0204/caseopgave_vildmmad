@@ -9,21 +9,15 @@ fetch(url + "/rest/v1/vildmad", {
   },
 })
   .then((res) => res.json())
-  .then(showData);
+  .then(showDatas);
 
-function showData(items) {
-  console.log(items);
-items.forEach(element => {
-  if(element.Sankested){
-    if(element.Sankested.includes(""))
-  }
+function showDatas(items) {
+  items.forEach(showData);
 }
-});
-
-  // //fang template
-  // const template = document.querySelector("#plante").content;
-  // // lav en kopi
-  // const copy
-
-  // document.querySelector("p.Sankested").textContent = items.Sankested;
-
+function showData(item) {
+  console.log(item);
+  // fang template
+  const template = document.querySelector("#plante").content;
+  // lav en kopi
+  const copy = template.cloneNode(true);
+}
