@@ -12,6 +12,7 @@
         rel="stylesheet">
     <title>Vinter</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
 </head>
 
 <body class="vinter_img">
@@ -35,20 +36,18 @@
 
     <main>
         <p class="overskrift_underside">VINTER</p>
-        <div id="Screen">
-            <div id="plante_elements">
-                <div class="grid_elements">
-                    <div id="plante_container1">
-                        <div id="plante_sprite1">
-                            <a href="plante.html"><img
-                                    src="https://vildmadv2.vps.webdock.io/application/files/2616/2452/4734/Fingertang_ravarekort_app.png"
-                                    alt="1"></a>
+        <template id="smallPlantTemplate">
+            <div class="grid_season">
+                    <div class="plante_container1">
+                        <div class="plante_sprite1">
+                            <a href="plante.html">
+                                <img class="plante_image" src="https://vildmadv2.vps.webdock.io/application/files/2616/2452/4734/Fingertang_ravarekort_app.png" alt="1"></a>
                         </div>
                     </div>
-                </div>
             </div>
-        </div>
+            </template>
     </main>
+    <script src="/js/planteliste.js"></script>
 
 
 </body>

@@ -365,7 +365,7 @@ li {
   }
 }
 @media screen and (min-width: 900px) {
-  #sreen {
+  /* #sreen {
     width: 100%;
     aspect-ratio: 16/9;
     position: relative;
@@ -376,27 +376,21 @@ li {
     position: relative;
     top: 0;
     left: 0;
-  }
+  } */
 
-  #plante_container1 {
-    position: absolute;
-    width: 7%;
-    aspect-ratio: 4/4;
-    top: 69%;
-    left: 85%;
+  .plante_container1 {
     transition: transform 0.2s ease-in-out;
   }
 
-  #plante_sprite1 {
-    width: 100%;
-    height: 100%;
+  .plante_sprite1 {
+    width: 90%;
+    height: auto;
     border-radius: 100%;
     cursor: pointer;
     overflow: hidden;
-    position: relative;
   }
 
-  #plante_container1:hover {
+  .plante_container1:hover {
     transform: translateY(-10px);
     animation: bounce 0.5s ease infinite;
   }
