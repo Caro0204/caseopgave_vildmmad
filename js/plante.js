@@ -16,20 +16,16 @@ fetch(url + "/rest/v1/vildmad", {
 
 function showData(items) {
   console.log(items);
-}
-function showItems(items) {
   items.forEach(showItem);
 }
 
+
 function showItem(item) {
-  console.log(item);
-  const template = document.querySelector("#plante").content;
-  const copy = template.cloneNode(true);
+  const template = document.querySelector("#plante").content.cloneNode(true);
+  template.querySelector(".Sankested").textContent = item.Sankested;
+  template.querySelector(".Saeson").textContent = item.Saeson;
+  template.querySelector(".Beskrivelse").textContent = item.Beskrivelse;
+  template.querySelector(".Sankning").textContent = item.Sankning;
 
-  document.querySelector("p.Sankested").textContent = item.Sankested;
-  document.querySelector("p.Saeson").textContent = item.Saeson;
-  document.querySelector("p.Beskrivelse").textContent = item.Beskrivelse;
-  document.querySelector("p.Sankning").textContent = item.Sankning;
-
-  document.querySelector(".margin_plante").appendChild(copy);
+  document.querySelector("#margin_plante").appendChild(template);
 }
